@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Counselor - Student Mental Health</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Select Your Counselor</h1>
+        <img src="images/counselor-selection-image.jpg" alt="Counselors" class="header-image">
+    </header>
+
+    <section id="counselor-selection">
+        <h2>Please choose a counselor:</h2>
+
+        <div class="counselor-list">
+            <div class="counselor-option">
+                <p><strong>Counselor 1:</strong> Dr. Jane Doe</p>
+                <button onclick="selectCounselor('Dr. Jane Doe')">Select</button>
+            </div>
+            <div class="counselor-option">
+                <p><strong>Counselor 2:</strong> Dr. John Smith</p>
+                <button onclick="selectCounselor('Dr. John Smith')">Select</button>
+            </div>
+            <div class="counselor-option">
+                <p><strong>Counselor 3:</strong> Dr. Emily Johnson</p>
+                <button onclick="selectCounselor('Dr. Emily Johnson')">Select</button>
+            </div>
+            <div class="counselor-option">
+                <p><strong>Counselor 4:</strong> Dr. Michael Brown</p>
+                <button onclick="selectCounselor('Dr. Michael Brown')">Select</button>
+            </div>
+            <div class="counselor-option">
+                <p><strong>Counselor 5:</strong> Dr. Sarah Wilson</p>
+                <button onclick="selectCounselor('Dr. Sarah Wilson')">Select</button>
+            </div>
+        </div>
+
+        <!-- Option to go back to the homepage -->
+        <div class="options">
+            <a href="homepage3.html" class="button">Go Back to Homepage</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Student Mental Health Support. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function selectCounselor(counselorName) {
+            // Redirect to the chat page with the selected counselor's name
+            window.location.href = `counselor-chat.html?counselor=${encodeURIComponent(counselorName)}`;
+        }
+    </script>
+
+</body>
+</html>
+

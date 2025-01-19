@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Counseling Session - Student Mental Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for the counseling form section */
+        #counseling-form {
+            background-image: url('counseling-image.jpg'); /* Replace with your background image */
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the image */
+            color: white; /* Text color for better contrast */
+            padding: 40px; /* Add padding for spacing */
+            border-radius: 10px; /* Rounded corners */
+            text-align: center; /* Center text */
+        }
+
+        input[type="date"], input[type="time"], select {
+            width: 80%; /* Set width for inputs */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 20px;
+            background-color: #4caf50; /* Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Schedule Counseling Session</h1>
+        <img src='counseling  -image.jpg' alt='Counseling session' class='header-image'>
+    </header>
+
+    <section id="counseling-form">
+        <h2>Select a Date and Time for Your Session</h2>
+
+        <!-- Simple form for scheduling -->
+        <form action="counseling-confirmation.html" method="POST">
+            <!-- Date selection -->
+            <label for="date">Select Date:</label><br/>
+            <input type="date" id="date" name="date" required><br/>
+
+            <!-- Time selection -->
+            <label for="time">Select Time:</label><br/>
+            <input type="time" id="time" name="time" required><br/>
+
+            <!-- Counselor selection (for demonstration purposes) -->
+            <label for="counselor">Select Counselor:</label><br/>
+            <select id="counselor" name="counselor" required>
+                <option value="">Choose a counselor...</option>
+                <option value="counselor1">Counselor 1 - Dr. Jane Doe</option>
+                <option value="counselor2">Counselor 2 - Dr. John Smith</option>
+                <!-- Add more counselors as necessary -->
+            </select><br/>
+
+            <!-- Submit button -->
+            <input type="submit" value="Schedule Session">
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Student Mental Health Support. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
