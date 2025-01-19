@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status - Student Mental Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for the image section */
+        /* Additional styles for the status section */
+        #status-message {
+            background-image: url('status-image.jpg'); /* Replace with your background image */
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the image */
+            color: white; /* Text color for better contrast */
+            padding: 40px; /* Add padding for spacing */
+            border-radius: 10px; /* Rounded corners */
+            text-align: center; /* Center text */
+        }
+        #feature-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .feature img {
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        .feature h3 {
+            margin-top: 10px;
+            color: #4caf50; /* Green color for headings */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome!</h1>
+        <img src="images/status-image.jpg" alt="Happy students" class="header-image">
+    </header>
+
+    <section id="status-message">
+        <p>Your account has been created successfully! You can now track your mood and schedule your first counseling session.</p>
+
+        <div id="feature-images">
+            <div class="feature">
+                <a href="mood-tracking.html" class="button">
+                    <img src="images/track-mood-icon.png" alt="Track Mood Icon">
+                    <h3>Track Your Mood</h3>
+                </a>
+            </div>
+            <div class="feature">
+                <a href="counseling.html" class="button">
+                    <img src="images/schedule-counseling-icon.png" alt="Schedule Counseling Icon">
+                    Schedule Counseling
+                </a>
+            </div>
+            <div class="feature">
+                <a href="previous-logs.html" class="button">
+                    <img src="images/previous-logs-icon.png" alt="Previous Mood Logs Icon">
+                    <h3>View Previous Mood Logs</h3>
+                </a>
+            </div>
+            <div class="feature">
+                <a href="counselor-selection.html" class="button"> <!-- Link to counselor selection -->
+                    <img src="images/chat-ai-icon.png" alt="Chat with AI Counselor Icon">
+                    <h3>Chat with AI Counselor</h3>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Student Mental Health Support. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

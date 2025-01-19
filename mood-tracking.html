@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracking - Student Mental Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for the image section */
+        /* Additional styles for the mood tracking section */
+        #mood-tracking-form {
+            background-image: url('mood-tracking-image.jpg'); /* Replace with your background image */
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the image */
+            color: white; /* Text color for better contrast */
+            padding: 40px; /* Add padding for spacing */
+            border-radius: 10px; /* Rounded corners */
+            text-align: center; /* Center text */
+        }
+
+        input[type="text"], select, textarea {
+            width: 80%; /* Set width for inputs */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 20px;
+            background-color: #4caf50; /* Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mood Tracking</h1>
+        
+    </header>
+
+    <section id="mood-tracking-form">
+        <h2>Log Your Mood</h2>
+        <!-- Form for logging mood -->
+        <form action="mood-tracking-success.html"  method="POST">
+            <!-- Mood selection -->
+            <label for="mood">How are you feeling today?</label><br/>
+            <select id="mood" name="mood" required>
+                <option value="">Select your mood...</option>
+                <option value="content">Content</option>
+                <option value="grateful">Grateful</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <option value="stressed">Stressed</option>
+                <option value="frustated">Frustated</option>
+                <option value="depressed">Depressed</option>
+                <option value="hopeless">Hopeless</option>
+                <option value="guilty">Guilty</option>
+                <option value="lonely">Lonely</option>
+                <!-- Add more moods as necessary -->
+            </select><br/>
+
+            <!-- Optional comments -->
+            <label for="comments">Additional Comments:</label><br/>
+            <textarea id="comments" name="comments"></textarea><br/>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit Mood Log" class='submit-button'>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Student Mental Health Support. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
